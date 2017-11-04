@@ -17,11 +17,13 @@
 
 <body>
   <div id="wrapper">
-    <textarea class="ytlt" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>You talk like this</textarea>
+    <textarea class="ytlt" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/></textarea>
   </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
   <script>
-    var ytlt = new ytlt();
+    var ytlt = new ytlt("file:///D:/Stack/Midas/Development/ytlt.wtf/index.html");
+    ytlt.tryInitialValue();
     ytlt.performReplace();
     ytlt.trackInput();
   </script>
